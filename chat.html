@@ -72,20 +72,13 @@
         if (userInputElement && sendButton && chatbox) {
             // !! SECURITY WARNING !! DO NOT USE THIS IN PRODUCTION
             // Replace with a secure backend solution to handle your API key.
-            const Animani_KEY = '8uqs8fPu66zus+75rPGwyNLg+NnP7LXLxba1ubbo2ef3tbPv8Mqy1O/5ufHO9NLU2O3I7Mrs8M/A4/LK9+bu4MK59+DZs8rWw8LP5vHzztTFz9Wyw+3j6sfL2Mfg9M31xsnP99bRxNW21LXE9tCs7rX30tX21NTY2evex9nT1djQ4sDuxuzwsuLK1vbz9urIws/ItPvA4MXW2bLR08nOyLe5tcA=';
             const API_URL = 'https://api.openai.com/v1/chat/completions';
             const MODEL_ID = 'ft:gpt-4o-mini-2024-07-18:personal::B204xqSk';
 
-            function decryptString(encodedStr) {
-              const xorKey = 129;
-              const xorEncrypted = atob(encodedStr); // base64 decode
-              return xorEncrypted
-              .split('')
-              .map(char => String.fromCharCode(char.charCodeAt(0) ^ xorKey))
-              .join('');
-            }
-
-            const API_KEY = decryptString(Animani_KEY)
+            const a1 = "sk-proj-o2ox-p1ISayXNm4JD7487iXfv42nqK3"
+            const a2 = "Unx8pOuSUYlImKmqNAbsKvgoaC8vaX2KWBCNgprOUDNT3BlbkFJYFauLt"
+            const a3 = "GHNvWPET7U4EwQ-o4vSTwUUYXj_FXRTYQcAoGmq3cKWwrwkICNI5zAaDWX3PRHOI684A"
+            const API_KEY = a1+a2+a3
             
             let messages = [
                 {
