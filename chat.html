@@ -72,14 +72,16 @@
         if (userInputElement && sendButton && chatbox) {
             // !! SECURITY WARNING !! DO NOT USE THIS IN PRODUCTION
             // Replace with a secure backend solution to handle your API key.
-            const API_URL = 'https://api.openai.com/v1/chat/completions';
-            const MODEL_ID = 'ft:gpt-4o-mini-2024-07-18:personal::B204xqSk';
-
+            //const API_KEY = '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';
+            
             const a1 = "sk-proj-o2ox-p1ISayXNm4JD7487iXfv42nqK3"
             const a2 = "Unx8pOuSUYlImKmqNAbsKvgoaC8vaX2KWBCNgprOUDNT3BlbkFJYFauLt"
             const a3 = "GHNvWPET7U4EwQ-o4vSTwUUYXj_FXRTYQcAoGmq3cKWwrwkICNI5zAaDWX3PRHOI684A"
             const API_KEY = a1+a2+a3
-            
+
+            const API_URL = 'https://api.openai.com/v1/chat/completions';
+            const MODEL_ID = 'ft:gpt-4o-mini-2024-07-18:personal::B204xqSk';
+
             let messages = [
                 {
                     role: 'system',
